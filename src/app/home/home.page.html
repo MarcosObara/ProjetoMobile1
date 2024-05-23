@@ -22,9 +22,9 @@
       <ion-label position="floating">Altura</ion-label>
       <ion-input type="number" placeholder="Informe um valor para a altura." name="altura" [(ngModel)]="altura"></ion-input>
     </ion-item>
-    <ion-button color="secondary" onclick="calcularArea()">Calcular</ion-button><br><br>
+    <ion-button color="secondary" (click)="calcularArea()">Calcular</ion-button><br><br>
     <ion-label>Resposta</ion-label>
-    <ion-label>{{reesultado}}</ion-label>
+    <ion-label>{{resultado}}</ion-label>
   </div>
 
 

@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public base!: number;
+  public altura!: number;
+  public resultado!: string;
+
   constructor() {}
 
 
 
 calcularArea(){
-  console.log("Chamei a função");
+  this.resultado=" A área do triângulo é de "+(this.base*this.altura)/2;
 }
 }
